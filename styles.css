@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/m-plus-1-code');
+Body{
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    font-family: 'M PLUS 1 Code', sans-serif;
+    color:rgb(18,0,29);
+}
+
+h1{
+    font-family: 'M PLUS 1 Code', sans-serif;
+    text-align: center;
+}
+
+form{
+    width: 600px;
+    margin: 0px auto;
+}
+
+fieldset{
+    border: 6px solid black;
+    border-radius: 19px;
+}
+
+legend{
+    font-family: monospace;
+    font-weight:500;
+}
+
+input[required]{
+    border: 2px solid red;
+    border-radius:8px;
+}
+
+input[optional]{
+    border: 2px solid blue;
+    border-radius: 8px;
+}
+
+input:focus{
+    background-color: bisque;
+}
+
+input+p{
+    display:none;
+}
+
+input:hover+p {
+    display:inline;
+    font-family:monospace;
+    font-weight: 800;
+    font-size: 15px;
+    background-color: rgb(254, 240, 255);
+    border-radius: 10px;
+
+}
+
+
+input[type="radio"]:checked{
+    height:0%;
+    width: 30px;
+}
+
+input[type="radio"]:checked+label{
+    font-size: 20px;
+    background-color:antiquewhite;
+    border-radius: 5px;
+}
+
+select{
+    background-color:burlywood;
+    border-radius: 10px;
+}
+
+textarea{
+    resize:none;
+}
+
+input[type="Email"]~img{
+    display:none;
+}
+
+input[type="Email"]:focus:valid~img#correct{
+    display: inline;
+    height: 20px;
+    width: 20px;
+
+}
+
+input[type="Email"]:focus:invalid~img#wrong{
+    display: inline;
+    height: 20px;
+    width: 20px;
+
+}

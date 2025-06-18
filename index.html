@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td><label for="fname">First Name</label></td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Ex:SIRI"><p>Enter the Name</p></td>
+                       
+                </tr>
+                <tr>
+                    <td><label for="surname">Surname</label></td>
+                    <td><input type="text" id="surname" name="surname" placeholder="Ex:B M" optional><p>Enter the Surname</p></td><br>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number</label></td>
+                    <td><input type="tel" id="mobile" name="mobile" placeholder="Ex:9988776655" required><p>Enter the Mobile number</p></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Ex:s@gmail.com" required><p>Enter the email</p>
+                        <img src="/check.png" alt="" id="correct"/>
+                        <img src="/cancel.png" alt="" id="wrong"/></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="min 8 characters" required><p>Enter the Password</p></td></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmpwd">Confirm Password</label></td>
+                    <td><input type="password" id="confirmpwd" name="confirmpwd" placeholder="min 8 characters" required><p>Enter the Confirm password</p></td></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB</label></td>
+                    <td><input type="date" id="dob" name="dob" required><p>Enter the DOB</p></td></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" name="age" required min="18" max="100"><p>Enter the Age</p></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" id="male"><label for="male"> Male</label>
+                        <input type="radio" name="gender" value="Female" id="female"><label for="female"> Female</label>
+                        <input type="radio" name="gender" value="Others" id="others"><label for="others"> Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Select Country</label></td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="INDIA">INDIA</option>
+                            <option value="USA">USA</option>
+                            <option value="GERMANY">GERMANY</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="resume">Upload Resume</label></td>
+                    <td><input type="file" id="resume" name="resume"></td>
+                </tr>
+                <td><input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Course Selection</legend>
+            <label for="course">Select Course</label><br>
+            <select name="course" id="course">
+                <option value="PFSWD">PFSWD</option>
+                <option value="JFSWD">JFSWD</option>
+                <option value="DATA STRUCTURE">DATA STRUCTURE</option>
+                <option value="CYBERSECURITY">CYBERSECURITY</option>
+            </select><br><br>
+
+            <label>Delivery Mode</label><br>
+            <input type="radio" name="mode" value="ONLINE" id="online"><label for="online"> ONLINE</label>
+            <input type="radio" name="mode" value="OFFLINE" id="offline"><label for="offline"> OFFLINE</label><br><br>
+
+            <label for="comments">Comments</label><br>
+            <textarea name="comments" id="comments" cols="50" rows="5"></textarea><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
